@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D8DFE8;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-size: 38px;
+}
+
+.main-container #itt-logo img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+
+    top: 7%;
+    bottom: 0%;
+    left: 2%;
+}
+
+.main-container #tecnm-logo img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 7%;
+    bottom: 0%;
+    right: 2%;
+}
+
+.card{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    border: 0.5px solid #000000;
+    background-color: #ECC30B;
+    width: 10rem;
+    height: 5rem;
+    margin-left: 40%;
+    transform: translateY(300%);
+    box-shadow: .2rem .4rem .5rem rgba(0,0,0,.3);
+    animation: sweepDown 0.5s ease-in-out forwards;
+
+}
+
+@keyframes sweepDown {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(300%);
+        opacity: 1;
+    }
+}
+
+#insert-expression {
+    position: absolute;
+    top: 68px;
+    left: 240px;
+}
+
+#input-expression {
+    border: none;
+    background-color: #D8DFE8;
+    line-height: 1.15;
+    width: 680px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+#input-expression:focus {
+    outline: none;
+}
+
+.generate {
+    position: absolute;
+    margin: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    width: 125px;
+    height: 67px;
+    font-size: 20px;
+    border-radius: 24px;
+    margin: 24px;
+    top: 18%;
+    left: 15%;
+}
